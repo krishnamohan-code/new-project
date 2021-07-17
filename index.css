@@ -1,0 +1,112 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Pridi&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Merienda+One&family=Rowdies:wght@300&family=Rye&display=swap');
+
+
+/* ************************************ */
+
+.container,.container-image{
+    border: 3px solid black;
+    border-radius: 3em;
+}
+.container{
+    display: flex;
+    margin: 3% 0 0 2%;
+     width: 95%;
+}
+hr{
+    width: 1px;
+   height: 360px;
+   margin: 2% 0 0 0 ;
+    background: black;
+    /* height: 90%; */
+}
+.container-image{
+    /* margin: 3%  2% 3% 2%; */
+    width: 40%;
+    /* border: 3px solid black; */
+    /* border-radius: 3em; */
+    /* background: #544db8; */
+    background: #625ac7;
+    /* background: blanchedalmond;; */
+    /* background: white; */
+}
+.container-text,.container-image{
+    margin: 3%  2% 3% 2%;
+}
+.container-text{
+    font-size: 1.3em;
+}
+.container-text h1{
+    margin:  0 0 0 5%;
+    font-family: 'Rowdies',cursive;
+}
+.container-text>img{
+    position: absolute;
+    left: 90%;
+    width: 2%;
+}
+.container-text p{
+    margin: 2% 0 0 0;
+}
+h1 span{
+    /* font-size: small; */
+    /* font-weight: 100; */
+    position: relative;
+    animation-name: moving-text;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes moving-text{
+  0%{left: 0px;top: 0px;}
+  25%{left: 20px;top: 0px;}
+  100%{left: 0px;top: 0px;}
+}
+
+.social{
+    display: flex;
+    margin: 5% 0 0 0;
+}
+.social a img{
+    margin: 0;
+    width: 50%;
+}
+.social a{
+    margin: 10px;
+}
+
+
+
+@media only screen and (max-width: 965px){
+
+    .container{
+        display: block;
+        width: 95%;
+    }
+    .container-image{
+        width: 94%;
+        /* margin: 3%  2% 3% 3%; */
+    }
+    hr{
+        display: none;
+    }
+    .container-text h1{
+        margin: -6% 0 0 20%;
+        font-size: 150%;
+    }
+    .social a img{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 509px){
+    .container-text h1{
+        margin: 0 0 0 2%;
+         font-size: 130%;
+    }
+    .container{
+        width: 95%;
+    }
+    .container-text h1{
+        margin: -6% 0 0 0;
+    }
+}
+
